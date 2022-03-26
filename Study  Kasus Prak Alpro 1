@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+int main(){	
+	int a=7000 ,b=9000;
+	int l, menu, jumlah;
+	string nama;
+	
+	cout<<"==========STRUK PEMBELIAN BENSIN========== "<<endl;
+	cout<<"NAMA PEMBELI : ";
+	cin>>nama;
+	cout<<"Jenis bensin : "<<endl;
+	cout<<"1. PERTALITE "<<endl;
+	cout<<"2. PERTAMAX "<<endl;
+	cout<<"Pilih jenis bensin : ";
+	cin>>menu;
+	
+	if (menu==1){
+		cout<<"Masukan Liter : "; cin>>l;
+		jumlah = l*a;
+		cout<<"Total pembelian Rp."<<jumlah;
+	}
+	else{
+		cout<<"Masukan Liter : "; cin>>l;
+		jumlah = l*b;
+		cout<<"Total pembelian Rp."<<jumlah;
+	}
+
+	system("cls");
+	
+	cout <<"==========STRUK SPBU PERTAMINA=========";
+	cout<<"=====================================" <<endl<<endl;
+	cout<<"Nama Pembli \t:"<<nama<<endl;
+	cout<<"Jenis bensin \t:"<<menu<<endl;
+	cout<<"Total Liter \t:"<<l<<" Liter"<<endl;
+	cout<<"Total Harga \t: Rp."<<jumlah;
+	
+}
